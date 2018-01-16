@@ -140,6 +140,11 @@ public class GUIRadio extends javax.swing.JFrame {
         bnext.setText("Next.");
 
         bprev.setText("Prev.");
+        bprev.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bprevActionPerformed(evt);
+            }
+        });
 
         bguardar.setText("Guardar");
 
@@ -327,14 +332,18 @@ public class GUIRadio extends javax.swing.JFrame {
 
     private void bFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFMActionPerformed
         // TODO add your handling code here:
-        if(bFM.isSelected())
+        if(bFM.isSelected()==true){
+            radio.Switch(false);
+        }
             
-        radio.Switch(bFM.isSelected()==true);
     }//GEN-LAST:event_bFMActionPerformed
 
     private void bAMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAMActionPerformed
         // TODO add your handling code here:
-        radio.Switch(bAM.isSelected()==true);
+        if(bAM.isSelected()==true){
+            radio.Switch(true);
+        }
+        
     }//GEN-LAST:event_bAMActionPerformed
 
     private void onoffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onoffActionPerformed
@@ -343,6 +352,10 @@ public class GUIRadio extends javax.swing.JFrame {
         
         }
     }//GEN-LAST:event_onoffActionPerformed
+
+    private void bprevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bprevActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bprevActionPerformed
 
     /**
      * @param args the command line arguments
