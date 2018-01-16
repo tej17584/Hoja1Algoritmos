@@ -7,8 +7,8 @@ package hoja1algoritmosprogramaradio;
  */
 public class Radio implements douglas {
     
-    private boolean emisora;
-    private boolean onoff;
+    private boolean emisora;//emisora
+    private boolean onoff;//una variable
     private float numeracion;
     private final int [] favoritos= new int[12];
     
@@ -17,68 +17,70 @@ public class Radio implements douglas {
         
     }
     /**
-     * 
-     * @param e
-     * @return 
+     * Este método es para encender o apagar el radio
+     * @param e un booleano con true o false de la radio
+     * @return un booleano para ver si la radio se prende o se apago
      */
     @Override
     public boolean onOff(boolean e){
-        if (onoff == true){
-            onoff = false;
-        }else{
+        if (e == true){
             onoff = true;
+        }else{
+            onoff = false;
         }
         return onoff;
     }
     
     /**
-     * 
-     * @param e
-     * @return 
+     * Este método es para cambiar entre AM y FM
+     * @param e un booleano para la estacion: AM= true ; FM=False
+     * @return un booleano con el tipo de estacion actuall
      */
     @Override
     public boolean Switch(boolean e){
-        if (emisora == true){
-            emisora = false;
-        }else{
+        if (e == true){
             emisora = true;
+        }else{
+            emisora = false;
         }
         return emisora;
     }
     /**
-     * 
-     * @param a
-     * @return 
+     * Este método pasa a la siguiente estacion
+     * @param a la estacion actual
+     * @return la estacion siguiente
      */
     @Override
     public float siguiente(float a){
         return numeracion;
     }
     /**
-     * 
-     * @param a
-     * @return 
+     * Este método es para la estacion anterior. 
+     * @param a la estacion acual
+     * @return la estacion anterior a colocar
      */
     @Override
     public float anterior(float a){
         return numeracion;
     }
     /**
-     * 
-     * @param e
-     * @param b 
+     * Este método es para guardar una estacion como favorito
+     * @param e el numero de estacion
+     * @param b el numero de boton para el favorito
      */
     @Override
     public void guardar(float e,int b){
         
     }
     /**
-     * 
-     * @param b 
+     * En este método se selecciona un favorito entre los guardados y se retorn
+     * @param b el boton que queremos seleccionar como favorito
      */
     @Override
-    public void SeleccionarFav(int b){
-    
+    public float SeleccionarFav(int b){
+        float estacionRetorno=0;
+        
+        return estacionRetorno;
     }
     
     

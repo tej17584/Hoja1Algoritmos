@@ -13,6 +13,6 @@ public interface douglas {
     float siguiente(float a);
     float anterior(float a);
     void guardar(float e,int b);
-    void SeleccionarFav(int b);
+    float SeleccionarFav(int b);
     
 }
