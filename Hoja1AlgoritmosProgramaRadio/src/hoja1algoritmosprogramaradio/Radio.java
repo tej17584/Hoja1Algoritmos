@@ -10,6 +10,8 @@ public class Radio implements douglas {
     private boolean emisora;
     private boolean onoff;
     private float numeracion;
+    private final int [] favoritos= new int[12];
+    
     
     public Radio(){
         
@@ -19,6 +21,7 @@ public class Radio implements douglas {
      * @param e
      * @return 
      */
+    @Override
     public boolean onOff(boolean e){
         if (onoff == true){
             onoff = false;
@@ -33,6 +36,7 @@ public class Radio implements douglas {
      * @param e
      * @return 
      */
+    @Override
     public boolean Switch(boolean e){
         if (emisora == true){
             emisora = false;
@@ -46,6 +50,7 @@ public class Radio implements douglas {
      * @param a
      * @return 
      */
+    @Override
     public float siguiente(float a){
         return numeracion;
     }
@@ -54,6 +59,7 @@ public class Radio implements douglas {
      * @param a
      * @return 
      */
+    @Override
     public float anterior(float a){
         return numeracion;
     }
@@ -62,6 +68,7 @@ public class Radio implements douglas {
      * @param e
      * @param b 
      */
+    @Override
     public void guardar(float e,int b){
         
     }
@@ -69,6 +76,7 @@ public class Radio implements douglas {
      * 
      * @param b 
      */
+    @Override
     public void SeleccionarFav(int b){
     
     }
