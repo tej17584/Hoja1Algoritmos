@@ -5,6 +5,8 @@
  */
 package hoja1algoritmosprogramaradio;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author SDiego
@@ -203,34 +205,27 @@ public class GUIRadio extends javax.swing.JFrame {
                         .addComponent(bFM)
                         .addGap(18, 18, 18)
                         .addComponent(bAM)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 225, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(bnext))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(320, 320, 320)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(texto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(bprev)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(b1)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(b2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(b3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(b4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(b5)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(b6)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(b7))
-                                .addComponent(bguardar)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(bprev)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(b1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(b2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(b3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(b4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(b5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(b6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(b7))
+                            .addComponent(bguardar))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(b8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -243,7 +238,18 @@ public class GUIRadio extends javax.swing.JFrame {
                         .addComponent(b12))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(onoff)))
+                        .addComponent(onoff))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(320, 320, 320)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(325, 325, 325)
+                                .addComponent(texto, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 4, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -359,7 +365,7 @@ public class GUIRadio extends javax.swing.JFrame {
         if(bFM.isSelected()==true){
             radio.Switch(false);
         }
-            
+        texto.setText("87.9"); 
     }//GEN-LAST:event_bFMActionPerformed
 
     private void bAMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAMActionPerformed
@@ -367,7 +373,7 @@ public class GUIRadio extends javax.swing.JFrame {
         if(bAM.isSelected()==true){
             radio.Switch(true);
         }
-        
+        texto.setText("530");
     }//GEN-LAST:event_bAMActionPerformed
 
     private void onoffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onoffActionPerformed
@@ -387,24 +393,33 @@ public class GUIRadio extends javax.swing.JFrame {
 
     private void bprevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bprevActionPerformed
         // TODO add your handling code here:
-        String numstr = texto.getText();
-        float num = Float.parseFloat(numstr);
-        if(bFM.isSelected()==true){
-            if(num<87.9 && num>107.9){
-                radio.siguiente(num);
-            }
-        }else if(bAM.isSelected()==true){
-            if(num<530 && num>1610){
-                radio.siguiente(num);
-            }
-        }
+        
         
     }//GEN-LAST:event_bprevActionPerformed
 
     private void bnextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnextActionPerformed
         // TODO add your handling code here:
         String numstr = texto.getText();
-        
+        float num = Float.parseFloat(numstr);
+        if(bFM.isSelected()==true){
+            if(num>87.9 && num<107.9){
+                radio.siguiente(num);
+                float freq = radio.siguiente(num);
+                String freqstr = Float.toString(freq);
+                texto.setText(freqstr);
+            }else{
+                JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+            }
+        }else if(bAM.isSelected()==true){
+            if(num>530 && num<1610){
+                radio.siguiente(num);
+                float freq = radio.siguiente(num);
+                String freqstr = Float.toString(freq);
+                texto.setText(freqstr);
+            }else{
+                JOptionPane.showMessageDialog(null, "La emisora AM tiene de rango (530-1610)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+            }
+        }        
     }//GEN-LAST:event_bnextActionPerformed
 
     /**
