@@ -9,7 +9,7 @@ public class Radio implements douglas {
     
     private boolean emisora;//emisora
     private boolean onoff;//una variable
-    private float numeracion;
+    private float num;
     private final float [] favoritos= new float[12];
     
     
@@ -53,12 +53,12 @@ public class Radio implements douglas {
     @Override
     public float siguiente(float a){
         if (emisora==true) {
-            this.numeracion=(a+10);
+            this.num=(a+10);
         }
         else if(emisora==false){
-            this.numeracion=(float) (a+0.2);
+            this.num=(float) (a+0.2);
         }
-        return numeracion;
+        return num;
     }
     /**
      * Este método es para la estacion anterior. 
@@ -68,12 +68,12 @@ public class Radio implements douglas {
     @Override
     public float anterior(float a){
          if (emisora==true) {
-            this.numeracion=(a-10);
+            this.num=(a-10);
         }
         else if(emisora==false){
-            this.numeracion=(float) (a-0.2);
+            this.num=(float) (a-0.2);
         }
-        return numeracion;
+        return num;
     }
     /**
      * Este método es para guardar una estacion como favorito
