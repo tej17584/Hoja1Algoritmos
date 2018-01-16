@@ -10,12 +10,14 @@ package hoja1algoritmosprogramaradio;
  * @author SDiego
  */
 public class GUIRadio extends javax.swing.JFrame {
-
+    private final Radio radio;
     /**
      * Creates new form GUIRadio
      */
     public GUIRadio() {
         initComponents();
+        
+        radio = new Radio();
     }
 
     /**

@@ -20,7 +20,12 @@ public class Radio implements douglas {
      * @return 
      */
     public boolean onOff(boolean e){
-    
+        if (onoff == true){
+            onoff = false;
+        }else{
+            onoff = true;
+        }
+        return onoff;
     }
     
     /**
@@ -29,7 +34,12 @@ public class Radio implements douglas {
      * @return 
      */
     public boolean Switch(boolean e){
-    
+        if (emisora == true){
+            emisora = false;
+        }else{
+            emisora = true;
+        }
+        return emisora;
     }
     /**
      * 
@@ -37,7 +47,7 @@ public class Radio implements douglas {
      * @return 
      */
     public float siguiente(float a){
-    
+        return numeracion;
     }
     /**
      * 
@@ -45,7 +55,7 @@ public class Radio implements douglas {
      * @return 
      */
     public float anterior(float a){
-    
+        return numeracion;
     }
     /**
      * 
@@ -53,7 +63,7 @@ public class Radio implements douglas {
      * @param b 
      */
     public void guardar(float e,int b){
-    
+        
     }
     /**
      * 
