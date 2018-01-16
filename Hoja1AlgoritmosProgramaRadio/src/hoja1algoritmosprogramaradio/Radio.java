@@ -52,6 +52,12 @@ public class Radio implements douglas {
      */
     @Override
     public float siguiente(float a){
+        if (emisora==true) {
+            this.numeracion=(a+10);
+        }
+        else if(emisora==false){
+            this.numeracion=(float) (a+0.2);
+        }
         return numeracion;
     }
     /**
