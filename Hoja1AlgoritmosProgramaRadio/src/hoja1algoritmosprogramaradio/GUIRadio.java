@@ -5,6 +5,7 @@
  */
 package hoja1algoritmosprogramaradio;
 
+import java.util.Arrays;
 import javax.swing.JOptionPane;
 
 /**
@@ -54,7 +55,7 @@ public class GUIRadio extends javax.swing.JFrame {
         bAM = new javax.swing.JRadioButton();
         onoff = new javax.swing.JCheckBox();
         texto = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cboxcanal = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -158,11 +159,17 @@ public class GUIRadio extends javax.swing.JFrame {
         });
 
         bguardar.setText("Guardar");
+        bguardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bguardarActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
         jLabel1.setText("FM UVG AM");
 
         buttonGroup1.add(bFM);
+        bFM.setSelected(true);
         bFM.setText("FM");
         bFM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,6 +185,7 @@ public class GUIRadio extends javax.swing.JFrame {
             }
         });
 
+        onoff.setSelected(true);
         onoff.setText("ON/OFF");
         onoff.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,7 +196,7 @@ public class GUIRadio extends javax.swing.JFrame {
         texto.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         texto.setText("87.9");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+        cboxcanal.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
         jLabel2.setText("Elija el canal en donde desea guardar la estacion presente:");
 
@@ -245,7 +253,7 @@ public class GUIRadio extends javax.swing.JFrame {
                                 .addGap(320, 320, 320)
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(cboxcanal, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(325, 325, 325)
                                 .addComponent(texto, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -258,7 +266,7 @@ public class GUIRadio extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cboxcanal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -313,51 +321,146 @@ public class GUIRadio extends javax.swing.JFrame {
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         // TODO add your handling code here:
-        
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(0);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(0);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         // TODO add your handling code here:
+         if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(1);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(1);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(2);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(2);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(3);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(3);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(4);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(4);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b5ActionPerformed
 
     private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(5);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(5);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b6ActionPerformed
 
     private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(6);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(6);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b7ActionPerformed
 
     private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(7);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(7);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b8ActionPerformed
 
     private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(8);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(8);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b9ActionPerformed
 
     private void b10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b10ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(9);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(9);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b10ActionPerformed
 
     private void b11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b11ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(10);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(10);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b11ActionPerformed
 
     private void b12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b12ActionPerformed
         // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            float fav = radio.SeleccionarFav(11);
+            texto.setText(String.format("%.1f", fav));
+        }else{
+            float fav = radio.SeleccionarFav(11);
+            texto.setText(String.format("%.1f", fav));
+        }
+        System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b12ActionPerformed
 
     private void bFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFMActionPerformed
@@ -378,23 +481,44 @@ public class GUIRadio extends javax.swing.JFrame {
 
     private void onoffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onoffActionPerformed
         // TODO add your handling code here:
-        if(onoff.isSelected()==true){
-            b1.setEnabled(false);b2.setEnabled(false);b3.setEnabled(false);b4.setEnabled(false);
-            b5.setEnabled(false);b6.setEnabled(false);b7.setEnabled(false);b8.setEnabled(false);
-            b9.setEnabled(false);b10.setEnabled(false);b11.setEnabled(false);b11.setEnabled(false);
-            bprev.setEnabled(false);bnext.setEnabled(false);bguardar.setEnabled(false);
-        }else if(onoff.isSelected()==false){ 
+        if(onoff.isSelected()==true){            
             b1.setEnabled(true);b2.setEnabled(true);b3.setEnabled(true);b4.setEnabled(true);
             b5.setEnabled(true);b6.setEnabled(true);b7.setEnabled(true);b8.setEnabled(true);
-            b9.setEnabled(true);b10.setEnabled(true);b11.setEnabled(true);b11.setEnabled(true);
+            b9.setEnabled(true);b10.setEnabled(true);b11.setEnabled(true);b12.setEnabled(true);
             bprev.setEnabled(true);bnext.setEnabled(true);bguardar.setEnabled(true); 
+        }else if(onoff.isSelected()==false){ 
+            b1.setEnabled(false);b2.setEnabled(false);b3.setEnabled(false);b4.setEnabled(false);
+            b5.setEnabled(false);b6.setEnabled(false);b7.setEnabled(false);b8.setEnabled(false);
+            b9.setEnabled(false);b10.setEnabled(false);b11.setEnabled(false);b12.setEnabled(false);
+            bprev.setEnabled(false);bnext.setEnabled(false);bguardar.setEnabled(false);
         }
     }//GEN-LAST:event_onoffActionPerformed
 
     private void bprevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bprevActionPerformed
         // TODO add your handling code here:
-        
-        
+        String numstr = texto.getText();
+        float num = Float.parseFloat(numstr);
+        if(bFM.isSelected()==true){
+            if(num>87.9 && num<107.9){
+                radio.anterior(num);
+                float freq = radio.anterior(num);
+                String freqstr = Float.toString(freq);
+                texto.setText(String.format("%.1f", freq));
+                //texto.setText(freqstr);
+            }else{
+                JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+            }
+        }else if(bAM.isSelected()==true){
+            if(num>530 && num<1610){
+                radio.anterior(num);
+                float freq = radio.anterior(num);
+                String freqstr = Float.toString(freq);
+                texto.setText(String.format("%.1f", freq));
+                //texto.setText(freqstr);
+            }else{
+                JOptionPane.showMessageDialog(null, "La emisora AM tiene de rango (530-1610)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+            }
+        } 
     }//GEN-LAST:event_bprevActionPerformed
 
     private void bnextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnextActionPerformed
@@ -406,7 +530,8 @@ public class GUIRadio extends javax.swing.JFrame {
                 radio.siguiente(num);
                 float freq = radio.siguiente(num);
                 String freqstr = Float.toString(freq);
-                texto.setText(freqstr);
+                texto.setText(String.format("%.1f", freq));
+                //texto.setText(freqstr);
             }else{
                 JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
             }
@@ -415,12 +540,33 @@ public class GUIRadio extends javax.swing.JFrame {
                 radio.siguiente(num);
                 float freq = radio.siguiente(num);
                 String freqstr = Float.toString(freq);
-                texto.setText(freqstr);
+                texto.setText(String.format("%.1f", freq));
+                //texto.setText(freqstr);
             }else{
                 JOptionPane.showMessageDialog(null, "La emisora AM tiene de rango (530-1610)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
             }
         }        
     }//GEN-LAST:event_bnextActionPerformed
+
+    private void bguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bguardarActionPerformed
+        // TODO add your handling code here:
+        if(bFM.isSelected()==true){
+            String canalstr = cboxcanal.getSelectedItem().toString();
+            int canal = Integer.parseInt(canalstr);
+            String freqstr = texto.getText();float freq = Float.parseFloat(freqstr);
+            radio.guardar(freq, canal);
+            JOptionPane.showMessageDialog(null, "La frecuencia "+String.format("%.1f", freq)+" "
+                + "se ha guardado en el canal "+canal,"Frecuancia guardada",JOptionPane.INFORMATION_MESSAGE);
+        }else if(bAM.isSelected()==true){
+            String canalstr = cboxcanal.getSelectedItem().toString();
+            int canal = Integer.parseInt(canalstr);
+            String freqstr = texto.getText();float freq = Float.parseFloat(freqstr);
+            radio.guardar(freq, canal);
+            JOptionPane.showMessageDialog(null, "La frecuencia "+String.format("%.1f", freq)+" "
+                + "se ha guardado en el canal "+canal,"Frecuancia guardada",JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+    }//GEN-LAST:event_bguardarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -476,7 +622,7 @@ public class GUIRadio extends javax.swing.JFrame {
     private javax.swing.JButton bnext;
     private javax.swing.JButton bprev;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> cboxcanal;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

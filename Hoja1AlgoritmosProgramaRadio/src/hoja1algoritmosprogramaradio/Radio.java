@@ -82,7 +82,7 @@ public class Radio implements douglas {
      */
     @Override
     public void guardar(float e,int b){
-        favoritos[b] = e;
+        favoritos[b-1] = e;
     }
     /**
      * En este método se selecciona un favorito entre los guardados y se retorn
@@ -100,5 +100,8 @@ public class Radio implements douglas {
         }
         return estacionRetorno;
     }
-    
+    //Metodo temporal para pruebas
+    public float[] getFav(){
+        return favoritos;
+    }
 }
