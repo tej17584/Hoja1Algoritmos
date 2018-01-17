@@ -1,4 +1,8 @@
-
+/**
+ *
+ * @author DIego Sevilla 17238
+ * @author Alejandro Tejada 17584
+ */
 package hoja1algoritmosprogramaradio;
 
 import java.util.Arrays;
@@ -191,8 +195,10 @@ public class GUIRadio extends javax.swing.JFrame {
             }
         });
 
-        texto.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        texto.setText("87.9");
+        texto.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        texto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        texto.setText("87.7");
+        texto.setEnabled(false);
 
         cboxcanal.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
@@ -205,56 +211,59 @@ public class GUIRadio extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(bFM)
-                        .addGap(18, 18, 18)
-                        .addComponent(bAM)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(bnext))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(bprev)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(b1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b7))
-                            .addComponent(bguardar))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(b8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(b9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(b10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(b11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(b12))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(onoff))
+                            .addComponent(bnext, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(bprev)
+                                                .addGap(187, 187, 187)
+                                                .addComponent(bFM)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(bAM))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(b1)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(b2)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(b3)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(b4)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(b5)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(b6)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(b7)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(b8)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(b9))
+                                    .addComponent(texto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(b10)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addComponent(b11)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(b12))
+                                            .addComponent(onoff, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(21, 21, 21)
+                                        .addComponent(bguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(320, 320, 320)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(cboxcanal, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(325, 325, 325)
-                                .addComponent(texto, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(cboxcanal, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 4, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -262,38 +271,45 @@ public class GUIRadio extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(cboxcanal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bFM)
-                    .addComponent(bAM))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bnext)
-                    .addComponent(bprev))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(b1)
-                    .addComponent(b2)
-                    .addComponent(b3)
-                    .addComponent(b4)
-                    .addComponent(b5)
-                    .addComponent(b6)
-                    .addComponent(b7)
-                    .addComponent(b8)
-                    .addComponent(b9)
-                    .addComponent(b10)
-                    .addComponent(b11)
-                    .addComponent(b12))
-                .addGap(18, 18, 18)
-                .addComponent(texto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(onoff)
-                    .addComponent(bguardar))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(cboxcanal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(bFM)
+                            .addComponent(bAM))
+                        .addGap(34, 34, 34))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(bguardar)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(bnext)
+                            .addComponent(bprev))
+                        .addGap(18, 18, 18)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(b1)
+                            .addComponent(b2)
+                            .addComponent(b3)
+                            .addComponent(b4)
+                            .addComponent(b5)
+                            .addComponent(b6)
+                            .addComponent(b7)
+                            .addComponent(b8)
+                            .addComponent(b9)
+                            .addComponent(b10)
+                            .addComponent(b11)
+                            .addComponent(b12))
+                        .addGap(75, 75, 75)
+                        .addComponent(onoff))
+                    .addComponent(texto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27))
         );
 
@@ -310,13 +326,16 @@ public class GUIRadio extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+/**
+ * Imprime el favorito que este guardado en ese boton
+ * @param evt el boton del favorito
+ */
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
@@ -326,7 +345,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(0);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+ 
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
@@ -338,7 +357,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(1);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+     
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
@@ -350,7 +369,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(2);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+     
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
@@ -362,7 +381,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(3);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+       
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
@@ -374,7 +393,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(4);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+  
     }//GEN-LAST:event_b5ActionPerformed
 
     private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
@@ -386,7 +405,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(5);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+   
     }//GEN-LAST:event_b6ActionPerformed
 
     private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
@@ -398,7 +417,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(6);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+  
     }//GEN-LAST:event_b7ActionPerformed
 
     private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
@@ -410,7 +429,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(7);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+
     }//GEN-LAST:event_b8ActionPerformed
 
     private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
@@ -422,7 +441,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(8);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+       
     }//GEN-LAST:event_b9ActionPerformed
 
     private void b10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b10ActionPerformed
@@ -434,7 +453,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(9);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+      
     }//GEN-LAST:event_b10ActionPerformed
 
     private void b11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b11ActionPerformed
@@ -446,7 +465,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(10);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+       
     }//GEN-LAST:event_b11ActionPerformed
 
     private void b12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b12ActionPerformed
@@ -458,7 +477,7 @@ public class GUIRadio extends javax.swing.JFrame {
             float fav = radio.SeleccionarFav(11);
             texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
-        System.out.println(Arrays.toString(radio.getFav()));
+
     }//GEN-LAST:event_b12ActionPerformed
 
     private void bFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFMActionPerformed
@@ -466,7 +485,7 @@ public class GUIRadio extends javax.swing.JFrame {
         if(bFM.isSelected()==true){
             radio.Switch(false);
         }
-        texto.setText("87.9"); 
+        texto.setText("87.7"); 
     }//GEN-LAST:event_bFMActionPerformed
 
     private void bAMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAMActionPerformed
@@ -496,18 +515,20 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         String numstr = texto.getText();
         float num = Float.parseFloat(numstr);
+        
         if(bFM.isSelected()==true){
-            if(num>87.9 && num<107.9){
+            if(num>87.6 && num<107.9){
                 radio.anterior(num);
                 float freq = radio.anterior(num);
                 String freqstr = Float.toString(freq);
                 texto.setText(String.format(Locale.ROOT,"%.1f", freq));
                 //texto.setText(freqstr);
             }else{
-                JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.7-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+                 texto.setText("87.7"); 
             }
         }else if(bAM.isSelected()==true){
-            if(num>530.0 && num<1610.0){
+            if(num>=530.0 && num<=1610.0){
                 radio.anterior(num);
                 float freq = radio.anterior(num);
                 String freqstr = Float.toString(freq);
@@ -515,6 +536,7 @@ public class GUIRadio extends javax.swing.JFrame {
                 //texto.setText(freqstr);
             }else{
                 JOptionPane.showMessageDialog(null, "La emisora AM tiene de rango (530-1610)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+                 texto.setText("530.0"); 
             }
         } 
     }//GEN-LAST:event_bprevActionPerformed
@@ -524,7 +546,7 @@ public class GUIRadio extends javax.swing.JFrame {
         String numstr = texto.getText();
         float num = Float.parseFloat(numstr);
         if(bFM.isSelected()==true){
-            if(num>87.9 && num<107.9){
+            if(num>87.6 && num<107.9){
                 radio.siguiente(num);
                
                 float freq = radio.siguiente(num);
@@ -535,10 +557,11 @@ public class GUIRadio extends javax.swing.JFrame {
                 
                 //texto.setText(freqstr);
             }else{
-                JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.7-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+                 texto.setText("87.7"); 
             }
         }else if(bAM.isSelected()==true){
-            if(num>530.0 && num<1610.0){
+            if(num>=530.0 && num<=1610.0){
                 radio.siguiente(num);
                 float freq = radio.siguiente(num);
                 String freqstr = Float.toString(freq);
@@ -546,6 +569,7 @@ public class GUIRadio extends javax.swing.JFrame {
                 //texto.setText(freqstr);
             }else{
                 JOptionPane.showMessageDialog(null, "La emisora AM tiene de rango (530-1610)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
+                 texto.setText("530.0"); 
             }
         }        
     }//GEN-LAST:event_bnextActionPerformed

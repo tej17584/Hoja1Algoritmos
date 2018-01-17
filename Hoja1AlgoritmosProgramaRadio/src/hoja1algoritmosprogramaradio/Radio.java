@@ -101,8 +101,5 @@ public class Radio implements douglas {
         }
         return estacionRetorno;
     }
-    //Metodo temporal para pruebas
-    public float[] getFav(){
-        return favoritos;
-    }
+   
 }
