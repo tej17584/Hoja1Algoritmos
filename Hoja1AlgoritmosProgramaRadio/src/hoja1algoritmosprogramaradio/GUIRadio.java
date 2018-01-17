@@ -476,7 +476,7 @@ public class GUIRadio extends javax.swing.JFrame {
         if(bAM.isSelected()==true){
             radio.Switch(true);
         }
-        texto.setText("530");
+        texto.setText("530.0");
     }//GEN-LAST:event_bAMActionPerformed
 
     private void onoffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onoffActionPerformed
@@ -509,7 +509,7 @@ public class GUIRadio extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
             }
         }else if(bAM.isSelected()==true){
-            if(num>530 && num<1610){
+            if(num>530.0 && num<1610.0){
                 radio.anterior(num);
                 float freq = radio.anterior(num);
                 String freqstr = Float.toString(freq);
@@ -536,7 +536,7 @@ public class GUIRadio extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
             }
         }else if(bAM.isSelected()==true){
-            if(num>530 && num<1610){
+            if(num>530.0 && num<1610.0){
                 radio.siguiente(num);
                 float freq = radio.siguiente(num);
                 String freqstr = Float.toString(freq);
