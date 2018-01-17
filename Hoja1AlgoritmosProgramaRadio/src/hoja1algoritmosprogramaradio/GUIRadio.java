@@ -2,6 +2,7 @@
 package hoja1algoritmosprogramaradio;
 
 import java.util.Arrays;
+import java.util.Locale;
 import javax.swing.JOptionPane;
 
 /**
@@ -320,10 +321,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(0);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(0);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b1ActionPerformed
@@ -332,10 +333,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
          if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(1);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(1);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b2ActionPerformed
@@ -344,10 +345,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(2);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(2);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b3ActionPerformed
@@ -356,10 +357,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(3);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(3);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b4ActionPerformed
@@ -368,10 +369,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(4);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(4);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b5ActionPerformed
@@ -380,10 +381,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(5);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(5);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b6ActionPerformed
@@ -392,10 +393,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(6);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(6);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b7ActionPerformed
@@ -404,10 +405,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(7);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(7);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b8ActionPerformed
@@ -416,10 +417,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(8);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(8);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b9ActionPerformed
@@ -428,10 +429,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(9);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(9);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b10ActionPerformed
@@ -440,10 +441,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(10);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(10);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b11ActionPerformed
@@ -452,10 +453,10 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(11);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }else{
             float fav = radio.SeleccionarFav(11);
-            texto.setText(String.format("%.1f", fav));
+            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
         }
         System.out.println(Arrays.toString(radio.getFav()));
     }//GEN-LAST:event_b12ActionPerformed
@@ -500,7 +501,7 @@ public class GUIRadio extends javax.swing.JFrame {
                 radio.anterior(num);
                 float freq = radio.anterior(num);
                 String freqstr = Float.toString(freq);
-                texto.setText(String.format("%.1f", freq));
+                texto.setText(String.format(Locale.ROOT,"%.1f", freq));
                 //texto.setText(freqstr);
             }else{
                 JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
@@ -510,7 +511,7 @@ public class GUIRadio extends javax.swing.JFrame {
                 radio.anterior(num);
                 float freq = radio.anterior(num);
                 String freqstr = Float.toString(freq);
-                texto.setText(String.format("%.1f", freq));
+                texto.setText(String.format(Locale.ROOT,"%.1f", freq));
                 //texto.setText(freqstr);
             }else{
                 JOptionPane.showMessageDialog(null, "La emisora AM tiene de rango (530-1610)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
@@ -525,9 +526,13 @@ public class GUIRadio extends javax.swing.JFrame {
         if(bFM.isSelected()==true){
             if(num>87.9 && num<107.9){
                 radio.siguiente(num);
+               
                 float freq = radio.siguiente(num);
+                
                 String freqstr = Float.toString(freq);
-                texto.setText(String.format("%.1f", freq));
+               
+                texto.setText(String.format(Locale.ROOT,"%.1f", freq));
+                
                 //texto.setText(freqstr);
             }else{
                 JOptionPane.showMessageDialog(null, "La emisora FM tiene de rango (87.9-107.9)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
@@ -537,7 +542,7 @@ public class GUIRadio extends javax.swing.JFrame {
                 radio.siguiente(num);
                 float freq = radio.siguiente(num);
                 String freqstr = Float.toString(freq);
-                texto.setText(String.format("%.1f", freq));
+                texto.setText(String.format(Locale.ROOT,"%.1f", freq));
                 //texto.setText(freqstr);
             }else{
                 JOptionPane.showMessageDialog(null, "La emisora AM tiene de rango (530-1610)","Fuera de rango",JOptionPane.INFORMATION_MESSAGE);
@@ -552,14 +557,14 @@ public class GUIRadio extends javax.swing.JFrame {
             int canal = Integer.parseInt(canalstr);
             String freqstr = texto.getText();float freq = Float.parseFloat(freqstr);
             radio.guardar(freq, canal);
-            JOptionPane.showMessageDialog(null, "La frecuencia "+String.format("%.1f", freq)+" "
+            JOptionPane.showMessageDialog(null, "La frecuencia "+String.format(Locale.ROOT,"%.1f", freq)+" "
                 + "se ha guardado en el canal "+canal,"Frecuancia guardada",JOptionPane.INFORMATION_MESSAGE);
         }else if(bAM.isSelected()==true){
             String canalstr = cboxcanal.getSelectedItem().toString();
             int canal = Integer.parseInt(canalstr);
             String freqstr = texto.getText();float freq = Float.parseFloat(freqstr);
             radio.guardar(freq, canal);
-            JOptionPane.showMessageDialog(null, "La frecuencia "+String.format("%.1f", freq)+" "
+            JOptionPane.showMessageDialog(null, "La frecuencia "+String.format(Locale.ROOT,"%.1f", freq)+" "
                 + "se ha guardado en el canal "+canal,"Frecuancia guardada",JOptionPane.INFORMATION_MESSAGE);
         }
         
