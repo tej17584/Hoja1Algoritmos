@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package hoja1algoritmosprogramaradio;
 
 import java.util.Arrays;
@@ -10,7 +6,8 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author SDiego
+ * @author DIego Sevilla 17238
+ * @author Alejandro Tejada 17584
  */
 public class GUIRadio extends javax.swing.JFrame {
     private final Radio radio;

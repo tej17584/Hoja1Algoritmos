@@ -15,4 +15,5 @@ public interface douglas {
     void guardar(float e,int b);
     float SeleccionarFav(int b);
     
+    
 }

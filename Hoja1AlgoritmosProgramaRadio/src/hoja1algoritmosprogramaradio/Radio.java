@@ -3,7 +3,8 @@ package hoja1algoritmosprogramaradio;
 
 /**
  *
- * @author SDiego
+ * @author DIego Sevilla 17238
+ * @author Alejandro Tejada 17584
  */
 public class Radio implements douglas {
     
