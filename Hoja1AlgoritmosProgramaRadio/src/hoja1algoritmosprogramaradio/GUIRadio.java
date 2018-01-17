@@ -340,144 +340,228 @@ public class GUIRadio extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(0);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(0);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
- 
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         // TODO add your handling code here:
-         if(bFM.isSelected()==true){
+        if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(1);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(1);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-     
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(2);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(2);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-     
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(3);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(3);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-       
     }//GEN-LAST:event_b4ActionPerformed
 
     private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(4);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(4);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-  
     }//GEN-LAST:event_b5ActionPerformed
 
     private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(5);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(5);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-   
     }//GEN-LAST:event_b6ActionPerformed
 
     private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(6);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(6);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-  
     }//GEN-LAST:event_b7ActionPerformed
 
     private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(7);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(7);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-
     }//GEN-LAST:event_b8ActionPerformed
 
     private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(8);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(8);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-       
     }//GEN-LAST:event_b9ActionPerformed
 
     private void b10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b10ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(9);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(9);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-      
     }//GEN-LAST:event_b10ActionPerformed
 
     private void b11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b11ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(10);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(10);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-       
     }//GEN-LAST:event_b11ActionPerformed
 
     private void b12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b12ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
             float fav = radio.SeleccionarFav(11);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }else{
             float fav = radio.SeleccionarFav(11);
-            texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            if(fav == 0.0){
+                JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
+            }else{
+                texto.setText(String.format(Locale.ROOT,"%.1f", fav));
+            }
         }
-
     }//GEN-LAST:event_b12ActionPerformed
 
     private void bFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFMActionPerformed
