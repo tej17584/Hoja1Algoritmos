@@ -567,7 +567,7 @@ public class GUIRadio extends javax.swing.JFrame {
     private void bFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFMActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            radio.Switch(false);
+            radio.Switch();
         }
         texto.setText("87.7"); 
     }//GEN-LAST:event_bFMActionPerformed
@@ -575,7 +575,7 @@ public class GUIRadio extends javax.swing.JFrame {
     private void bAMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAMActionPerformed
         // TODO add your handling code here:
         if(bAM.isSelected()==true){
-            radio.Switch(true);
+            radio.Switch();
         }
         texto.setText("530.0");
     }//GEN-LAST:event_bAMActionPerformed

@@ -15,7 +15,8 @@ public class Radio implements douglas {
     
     
     public Radio(){
-        
+        emisora = false; //FM
+        onoff = true;    //Encendido
     }
     /**
      * Este método es para encender o apagar el radio
@@ -23,8 +24,8 @@ public class Radio implements douglas {
      * @return un booleano para ver si la radio se prende o se apago
      */
     @Override
-    public boolean onOff(boolean e){
-        if (e == true){
+    public boolean onOff(){
+        if (onoff == false){
             onoff = true;
         }else{
             onoff = false;
@@ -38,8 +39,8 @@ public class Radio implements douglas {
      * @return un booleano con el tipo de estacion actuall
      */
     @Override
-    public boolean Switch(boolean e){
-        if (e == true){
+    public boolean Switch(){
+        if (emisora == false){
             emisora = true;
         }else{
             emisora = false;

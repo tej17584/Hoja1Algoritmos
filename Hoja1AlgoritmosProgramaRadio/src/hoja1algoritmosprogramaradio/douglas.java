@@ -8,8 +8,8 @@ package hoja1algoritmosprogramaradio;
  */
 public interface douglas {
     
-    boolean onOff(boolean e);
-    boolean Switch(boolean e);
+    boolean onOff();
+    boolean Switch();
     float siguiente(float a);
     float anterior(float a);
     void guardar(float e,int b);

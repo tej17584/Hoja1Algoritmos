@@ -43,10 +43,9 @@ public class RadioTest {
     @Test
     public void testOnOff1() {
         System.out.println("OFF");
-        boolean e = false;
         Radio instance = new Radio();
         boolean expResult = false;
-        boolean result = instance.onOff(e);
+        boolean result = instance.onOff();
         assertEquals(expResult, result);
       
     }
@@ -56,10 +55,10 @@ public class RadioTest {
     @Test
     public void testOnOff2() {
         System.out.println("ON");
-        boolean e = true;
         Radio instance = new Radio();
+        instance.onOff();
         boolean expResult = true;
-        boolean result = instance.onOff(e);
+        boolean result = instance.onOff();
         assertEquals(expResult, result);
       
     }
@@ -69,10 +68,10 @@ public class RadioTest {
     @Test
     public void testSwitch1() {
         System.out.println("SwitchFM");
-        boolean e = false;
         Radio instance = new Radio();
+        instance.Switch();
         boolean expResult = false;
-        boolean result = instance.Switch(e);
+        boolean result = instance.Switch();
         assertEquals(expResult, result);
        
     }
@@ -82,10 +81,9 @@ public class RadioTest {
     @Test
     public void testSwitch2() {
         System.out.println("SwitchAM");
-        boolean e = true;
         Radio instance = new Radio();
         boolean expResult = true;
-        boolean result = instance.Switch(e);
+        boolean result = instance.Switch();
         assertEquals(expResult, result);
        
     }
@@ -98,7 +96,6 @@ public class RadioTest {
         System.out.println("siguienteFM");
         float a = (float) 90.0;
         Radio instance = new Radio();
-        instance.Switch(false);
         float expResult = (float) 90.2;
         float result = instance.siguiente(a);
         assertEquals(expResult, result, 0.0);
@@ -114,7 +111,7 @@ public class RadioTest {
         System.out.println("siguienteAM");
         float a = (float) 560;
         Radio instance = new Radio();
-        instance.Switch(true);
+        instance.Switch();
         float expResult = (float) 570;
         float result = instance.siguiente(a);
         assertEquals(expResult, result, 0.0);
@@ -128,7 +125,7 @@ public class RadioTest {
         System.out.println("anteriorFM");
         float a = (float) 90.0;
         Radio instance = new Radio();
-        instance.Switch(false);
+        //instance.Switch();
         float expResult = (float) 89.8;
         float result = instance.anterior(a);
         assertEquals(expResult, result, 0.0);
@@ -143,7 +140,7 @@ public class RadioTest {
         System.out.println("anteriorAM");
         float a = (float) 90.0;
         Radio instance = new Radio();
-        instance.Switch(true);
+        instance.Switch();
         float expResult = (float) 80.0;
         float result = instance.anterior(a);
         assertEquals(expResult, result, 0.0);
