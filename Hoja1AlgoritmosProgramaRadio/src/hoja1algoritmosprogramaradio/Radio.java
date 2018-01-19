@@ -23,13 +23,13 @@ public class Radio implements douglas {
      * @return un booleano para ver si la radio se prende o se apago
      */
     
-    public boolean onOff(){
+    public void onOff(){
         if (onoff == false){
             onoff = true;
         }else{
             onoff = false;
         }
-        return onoff;
+       
     }
     
     /**

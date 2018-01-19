@@ -11,7 +11,7 @@ public interface douglas {
      * Este método es para encender o apagar la radio
      * @return un booleano con la radio
      */
-    boolean onOff();
+    void onOff();
     /**
      * Este método es para cambiar entre emisora true=FM y false=AM
      * @return un booleano con la estacion actual
