@@ -8,19 +8,18 @@ package hoja1algoritmosprogramaradio;
  */
 public class Radio implements douglas {
     
-    private boolean emisora;//emisora
-    private boolean onoff;//una variable
+    private boolean emisora;//emisora en que se encuentra
+    private boolean onoff;//una variable para encendido u apagado
     private float num;
     private final float [] favoritos= new float[12];
     
     
     public Radio(){
-        emisora = false; //FM
+        emisora = true; //AM
         onoff = true;    //Encendido
     }
     /**
      * Este método es para encender o apagar el radio
-     * @param e un booleano con true o false de la radio
      * @return un booleano para ver si la radio se prende o se apago
      */
     @Override
@@ -35,8 +34,7 @@ public class Radio implements douglas {
     
     /**
      * Este método es para cambiar entre AM y FM
-     * @param e un booleano para la estacion: AM= true ; FM=False
-     * @return un booleano con el tipo de estacion actuall
+     * @return un booleano con el tipo de estacion actuall true=FM false=AM
      */
     @Override
     public boolean Switch(){
@@ -54,10 +52,10 @@ public class Radio implements douglas {
      */
     @Override
     public float siguiente(float a){
-        if (emisora==true) {
+        if (emisora==false) {
             this.num=(a+10);
         }
-        else if(emisora==false){
+        else if(emisora==true){
             this.num=(float) (a+0.2);
         }
         return num;
@@ -69,10 +67,10 @@ public class Radio implements douglas {
      */
     @Override
     public float anterior(float a){
-         if (emisora==true) {
+         if (emisora==false) {
             this.num=(a-10);
         }
-        else if(emisora==false){
+        else if(emisora==true){
             this.num=(float) (a-0.2);
         }
         return num;
@@ -89,6 +87,7 @@ public class Radio implements douglas {
     /**
      * En este método se selecciona un favorito entre los guardados y se retorn
      * @param b el boton que queremos seleccionar como favorito
+     * @return un float con la estacion del favorito seleccionada
      */
     @Override
     public float SeleccionarFav(int b){
