@@ -22,7 +22,7 @@ public class Radio implements douglas {
      * Este método es para encender o apagar el radio
      * @return un booleano para ver si la radio se prende o se apago
      */
-    @Override
+    
     public boolean onOff(){
         if (onoff == false){
             onoff = true;
@@ -36,7 +36,7 @@ public class Radio implements douglas {
      * Este método es para cambiar entre AM y FM
      * @return un booleano con el tipo de estacion actuall true=FM false=AM
      */
-    @Override
+   
     public boolean Switch(){
         if (emisora == false){
             emisora = true;
@@ -50,7 +50,7 @@ public class Radio implements douglas {
      * @param a la estacion actual
      * @return la estacion siguiente
      */
-    @Override
+   
     public float siguiente(float a){
         if (emisora==false) {
             this.num=(a+10);
@@ -65,7 +65,7 @@ public class Radio implements douglas {
      * @param a la estacion acual
      * @return la estacion anterior a colocar
      */
-    @Override
+  
     public float anterior(float a){
          if (emisora==false) {
             this.num=(a-10);
@@ -80,7 +80,7 @@ public class Radio implements douglas {
      * @param e el numero de estacion
      * @param b el numero de boton para el favorito
      */
-    @Override
+   
     public void guardar(float e,int b){
         favoritos[b-1] = e;
     }
@@ -89,7 +89,7 @@ public class Radio implements douglas {
      * @param b el boton que queremos seleccionar como favorito
      * @return un float con la estacion del favorito seleccionada
      */
-    @Override
+    
     public float SeleccionarFav(int b){
         float estacionRetorno=0;
         int it;

@@ -70,7 +70,7 @@ public class RadioTest {
         System.out.println("SwitchFM");
         Radio instance = new Radio();
         instance.Switch();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.Switch();
         assertEquals(expResult, result);
        
@@ -82,7 +82,7 @@ public class RadioTest {
     public void testSwitch2() {
         System.out.println("SwitchAM");
         Radio instance = new Radio();
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.Switch();
         assertEquals(expResult, result);
        
