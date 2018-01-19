@@ -37,13 +37,14 @@ public class Radio implements douglas {
      * @return un booleano con el tipo de estacion actuall true=FM false=AM
      */
    
-    public boolean Switch(){
+    public float Switch(){
         if (emisora == false){
             emisora = true;
         }else{
             emisora = false;
         }
-        return emisora;
+        float a=0;
+        return a;
     }
     /**
      * Este método pasa a la siguiente estacion

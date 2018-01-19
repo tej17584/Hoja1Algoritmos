@@ -16,7 +16,7 @@ public interface douglas {
      * Este método es para cambiar entre emisora true=FM y false=AM
      * @return un booleano con la estacion actual
      */
-    boolean Switch();
+    float Switch();
     /**
      * Este método es para ir siguiente estacion 
      * @param a la estacion actual
