@@ -89,22 +89,17 @@ public class Radio implements iradio {
   
     public float anterior(float a){
          if (emisora==false) {
-            if (this.numAM < 531 || a <531){
-                numAM = 530;
-                return 530;
-            } else {
+            
+            
                 numAM = numAM -10;
                 return a -10;
             }
-        }
+        
         else if(emisora==true){
-             if (this.numFM < 87.91 || a <87.91){
-                numFM = (float) 107.9;
-                return (float) 107.9;
-            } else {
+             
                 numFM = (float) (numFM -0.2);
                 return (float) (a -0.2 );
-            }
+            
         }
         else{
             float b=0;

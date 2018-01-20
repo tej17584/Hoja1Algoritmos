@@ -67,35 +67,8 @@ public class RadioTest {
         assertEquals(expResult, result, 0.0);
     }
 
-    /**
-     * Test of anterior method, of class Radio. Veremos si retrocede con FM activado
-     */
-    @Test
-    public void testAnteriorFM() {
-        System.out.println("anteriorFM");
-        float a = (float) 90.0;
-        Radio instance = new Radio();
-        //instance.Switch();
-        float expResult = (float) 89.8;
-        float result = instance.anterior(a);
-        assertEquals(expResult, result, 0.0);
-      
-    }
 
-     /**
-     * Test of anterior method, of class Radio. Veremos si retrocede con AM activado, debería retroceder 10
-     */
-    @Test
-    public void testAnteriorAM() {
-        System.out.println("anteriorAM");
-        float a = (float) 90.0;
-        Radio instance = new Radio();
-        instance.Switch();
-        float expResult = (float) 80.0;
-        float result = instance.anterior(a);
-        assertEquals(expResult, result, 0.0);
-      
-    }
+    
     /**
      * Test of guardar method, of class Radio.Guardamos una emisora en el número de boton que enviamos
      */
@@ -155,22 +128,10 @@ public class RadioTest {
         Radio instance = new Radio();
         instance.onOff();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
-    /**
-     * Test of Switch method, of class Radio.
-     */
-    @Test
-    public void testSwitch() {
-        System.out.println("Switch");
-        Radio instance = new Radio();
-        float expResult = 0.0F;
-        float result = instance.Switch();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+   
 
     /**
      * Test of siguiente method, of class Radio.
@@ -178,13 +139,13 @@ public class RadioTest {
     @Test
     public void testSiguiente() {
         System.out.println("siguiente");
-        float a = 0.0F;
+        float a =(float) 90.0;
         Radio instance = new Radio();
-        float expResult = 0.0F;
+        float expResult =(float) 90.2;
         float result = instance.siguiente(a);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+      
     }
 
     /**
@@ -193,13 +154,14 @@ public class RadioTest {
     @Test
     public void testAnterior() {
         System.out.println("anterior");
-        float a = 0.0F;
+        float a = (float)550.0;
         Radio instance = new Radio();
-        float expResult = 0.0F;
+        instance.Switch();
+        float expResult = (float)540.0;
         float result = instance.anterior(a);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -208,12 +170,12 @@ public class RadioTest {
     @Test
     public void testGuardar() {
         System.out.println("guardar");
-        float e = 0.0F;
-        int b = 0;
+        float e = 1;
+        int b = 10;
         Radio instance = new Radio();
         instance.guardar(e, b);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    
     }
     
 }
