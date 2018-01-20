@@ -37,56 +37,6 @@ public class RadioTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of onOff method, of class Radio. Para ver si lo apaga
-     */
-    @Test
-    public void testOnOff1() {
-        System.out.println("OFF");
-        Radio instance = new Radio();
-        boolean expResult = false;
-        boolean result = instance.onOff();
-        assertEquals(expResult, result);
-      
-    }
- /**
-     * Test of onOff method, of class Radio. Para ver si lo enciende
-     */
-    @Test
-    public void testOnOff2() {
-        System.out.println("ON");
-        Radio instance = new Radio();
-        instance.onOff();
-        boolean expResult = true;
-        boolean result = instance.onOff();
-        assertEquals(expResult, result);
-      
-    }
-    /**
-     * Test of Switch method, of class Radio. Para ver si cambia la variable de estacion
-     */
-    @Test
-    public void testSwitch1() {
-        System.out.println("SwitchFM");
-        Radio instance = new Radio();
-        instance.Switch();
-        boolean expResult = true;
-        boolean result = instance.Switch();
-        assertEquals(expResult, result);
-       
-    }
-    /**
-     * Test of Switch method, of class Radio. Para ver si cambia la variable de estacion
-     */
-    @Test
-    public void testSwitch2() {
-        System.out.println("SwitchAM");
-        Radio instance = new Radio();
-        boolean expResult = false;
-        boolean result = instance.Switch();
-        assertEquals(expResult, result);
-       
-    }
 
     /**
      * Test of siguiente method, of class Radio. Para ver si hace la opcion de FM si la FM esta activada
@@ -191,9 +141,79 @@ public class RadioTest {
         int b = 5;
         Radio instance = new Radio();
         float expResult = (float) 0.0;
-        float result = instance.SeleccionarFav(b);
+        float result = instance.seleccionarFav(b);
         assertEquals(expResult, result, 0.0);
        
+    }
+
+    /**
+     * Test of onOff method, of class Radio.
+     */
+    @Test
+    public void testOnOff() {
+        System.out.println("onOff");
+        Radio instance = new Radio();
+        instance.onOff();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of Switch method, of class Radio.
+     */
+    @Test
+    public void testSwitch() {
+        System.out.println("Switch");
+        Radio instance = new Radio();
+        float expResult = 0.0F;
+        float result = instance.Switch();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of siguiente method, of class Radio.
+     */
+    @Test
+    public void testSiguiente() {
+        System.out.println("siguiente");
+        float a = 0.0F;
+        Radio instance = new Radio();
+        float expResult = 0.0F;
+        float result = instance.siguiente(a);
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of anterior method, of class Radio.
+     */
+    @Test
+    public void testAnterior() {
+        System.out.println("anterior");
+        float a = 0.0F;
+        Radio instance = new Radio();
+        float expResult = 0.0F;
+        float result = instance.anterior(a);
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of guardar method, of class Radio.
+     */
+    @Test
+    public void testGuardar() {
+        System.out.println("guardar");
+        float e = 0.0F;
+        int b = 0;
+        Radio instance = new Radio();
+        instance.guardar(e, b);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

@@ -16,6 +16,8 @@ import javax.swing.JOptionPane;
  */
 public class GUIRadio extends javax.swing.JFrame {
     private final Radio radio;
+    
+    
 
     /**
      * Creates new form GUIRadio
@@ -339,14 +341,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(0);
+            float fav = radio.seleccionarFav(1);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(0);
+            float fav = radio.seleccionarFav(1);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -358,14 +360,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(1);
+            float fav = radio.seleccionarFav(2);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(1);
+            float fav = radio.seleccionarFav(2);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -377,14 +379,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(2);
+            float fav = radio.seleccionarFav(3);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(2);
+            float fav = radio.seleccionarFav(3);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -396,14 +398,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(3);
+            float fav = radio.seleccionarFav(4);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(3);
+            float fav = radio.seleccionarFav(4);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -415,14 +417,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(4);
+            float fav = radio.seleccionarFav(5);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(4);
+            float fav = radio.seleccionarFav(5);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -434,14 +436,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(5);
+            float fav = radio.seleccionarFav(6);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(5);
+            float fav = radio.seleccionarFav(6);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -453,14 +455,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(6);
+            float fav = radio.seleccionarFav(7);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(6);
+            float fav = radio.seleccionarFav(7);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -472,14 +474,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(7);
+            float fav = radio.seleccionarFav(8);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(7);
+            float fav = radio.seleccionarFav(8);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -491,14 +493,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(8);
+            float fav = radio.seleccionarFav(9);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(8);
+            float fav = radio.seleccionarFav(9);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -510,14 +512,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b10ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(9);
+            float fav = radio.seleccionarFav(10);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(9);
+            float fav = radio.seleccionarFav(10);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -529,14 +531,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b11ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(10);
+            float fav = radio.seleccionarFav(11);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(10);
+            float fav = radio.seleccionarFav(11);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
@@ -548,14 +550,14 @@ public class GUIRadio extends javax.swing.JFrame {
     private void b12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b12ActionPerformed
         // TODO add your handling code here:
         if(bFM.isSelected()==true){
-            float fav = radio.SeleccionarFav(11);
+            float fav = radio.seleccionarFav(12);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{
                 texto.setText(String.format(Locale.ROOT,"%.1f", fav));
             }
         }else{
-            float fav = radio.SeleccionarFav(11);
+            float fav = radio.seleccionarFav(12);
             if(fav == 0.0){
                 JOptionPane.showMessageDialog(null, "No hay nada guardado en este canal aun.");
             }else{

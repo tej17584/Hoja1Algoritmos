@@ -6,10 +6,9 @@ package hoja1algoritmosprogramaradio;
  * @author DIego Sevilla 17238
  * @author Alejandro Tejada 17584
  */
-public interface douglas {
+public interface iradio {
     /**
      * Este método es para encender o apagar la radio
-     * @return un booleano con la radio
      */
     void onOff();
     /**
@@ -40,7 +39,7 @@ public interface douglas {
      * @param b el botón del favorito a escuchar
      * @return la estacion del favorito seleccionado
      */
-    float SeleccionarFav(int b);
+    float seleccionarFav(int b);
     
     
 }

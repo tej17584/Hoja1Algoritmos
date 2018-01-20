@@ -6,30 +6,32 @@ package hoja1algoritmosprogramaradio;
  * @author DIego Sevilla 17238
  * @author Alejandro Tejada 17584
  */
-public class Radio implements douglas {
+public class Radio implements iradio {
     
     private boolean emisora;//emisora en que se encuentra
     private boolean onoff;//una variable para encendido u apagado
-    private float num;
+    private float numAM,numFM;
     private final float [] favoritos= new float[12];
     
     
     public Radio(){
-        emisora = true; //AM
+        emisora = true; //FM
         onoff = true;    //Encendido
+        numAM=(float) 530.0;
+        numFM=(float) 87.7;
     }
     /**
      * Este método es para encender o apagar el radio
-     * @return un booleano para ver si la radio se prende o se apago
      */
     
+    @Override
     public void onOff(){
         if (onoff == false){
             onoff = true;
         }else{
             onoff = false;
         }
-       
+        
     }
     
     /**
@@ -37,14 +39,16 @@ public class Radio implements douglas {
      * @return un booleano con el tipo de estacion actuall true=FM false=AM
      */
    
+    @Override
     public float Switch(){
         if (emisora == false){
             emisora = true;
+            return numFM;
         }else{
             emisora = false;
+            return numAM;
         }
-        float a=0;
-        return a;
+       
     }
     /**
      * Este método pasa a la siguiente estacion
@@ -52,14 +56,30 @@ public class Radio implements douglas {
      * @return la estacion siguiente
      */
    
+    @Override
     public float siguiente(float a){
         if (emisora==false) {
-            this.num=(a+10);
+            if (this.numAM >= 1610 || a >=1610){
+                numAM = 530;
+                return 530;
+            } else {
+                numAM = numAM +10;
+                return a+10;
+            }
         }
         else if(emisora==true){
-            this.num=(float) (a+0.2);
+          if (this.numFM >= 107.9 || a >=107.9){
+                numFM = (float) 87.9;
+                return (float) 87.9;
+            } else {
+                numFM = (float) (numFM +0.2);
+                return (float) (a + 0.2 );
+            }
         }
-        return num;
+        else{
+            float b=0;
+            return b;
+        }
     }
     /**
      * Este método es para la estacion anterior. 
@@ -69,12 +89,28 @@ public class Radio implements douglas {
   
     public float anterior(float a){
          if (emisora==false) {
-            this.num=(a-10);
+            if (this.numAM < 531 || a <531){
+                numAM = 530;
+                return 530;
+            } else {
+                numAM = numAM -10;
+                return a -10;
+            }
         }
         else if(emisora==true){
-            this.num=(float) (a-0.2);
+             if (this.numFM < 87.91 || a <87.91){
+                numFM = (float) 107.9;
+                return (float) 107.9;
+            } else {
+                numFM = (float) (numFM -0.2);
+                return (float) (a -0.2 );
+            }
         }
-        return num;
+        else{
+            float b=0;
+            return b;
+        }
+        
     }
     /**
      * Este método es para guardar una estacion como favorito
@@ -82,6 +118,7 @@ public class Radio implements douglas {
      * @param b el numero de boton para el favorito
      */
    
+    @Override
     public void guardar(float e,int b){
         favoritos[b-1] = e;
     }
@@ -91,12 +128,13 @@ public class Radio implements douglas {
      * @return un float con la estacion del favorito seleccionada
      */
     
-    public float SeleccionarFav(int b){
+    @Override
+    public float seleccionarFav(int b){
         float estacionRetorno=0;
         int it;
         for(int i=0;i<favoritos.length;i++){
             estacionRetorno = favoritos[i];
-            if(i==b){
+            if(i==b-1){
                 return estacionRetorno;
             }
         }
